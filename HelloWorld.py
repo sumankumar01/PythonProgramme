@@ -1,0 +1,6 @@
+print('Hello World')
+print("Hello World")
+print(1 + 2)
+print(2 * 2)
+print()
+print("print end", "or is it ?", "keep watching to learn about python", 3)
