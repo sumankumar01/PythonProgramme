@@ -1,5 +1,11 @@
+import pytest
 import unittest
+import HtmlTestRunner
+from HtmlTestRunner import HTMLTestRunner
+import allure
 
+@allure.story('Your Story here')
+@allure.feature('Your Feature here')
 class CodeVlidation(unittest.TestCase):
 
     @classmethod
@@ -17,8 +23,10 @@ class CodeVlidation(unittest.TestCase):
         print("cleaning the environment")
 
     def testcase1(self):
+
         print("running the test case1")
         self.assertEqual(2, 2)
+
     def testcase2(self):
         print("running the test case2")
         self.assertEqual(2, 3)
@@ -47,4 +55,5 @@ if __name__ == '__main__':
 
     newSuite = unittest.TestSuite(TestList)
     runner = unittest.TextTestRunner()
+    runner=HTMLTestRunner(output='example_dir')
     runner.run(newSuite)

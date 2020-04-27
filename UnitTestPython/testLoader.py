@@ -1,13 +1,16 @@
-import unittest
+import pytest
+import allure
 
-testList = [testcase1(), testcase1()]
-testLoad = unittest.TestLoader()
+def test_testcase1():
+    print("running the test case1")
+    assert True
 
-TestList = []
-for testCase in testList:
-    testSuite = testLoad.loadTestsFromTestCase(testCase)
-    TestList.append(testSuite)
+def test_testcase2():
+    print("running the test case2")
+    assert False
 
-newSuite = unittest.TestSuite(TestList)
-runner = unittest.TextTestRunner()
-runner.run(newSuite)
+
+
+
+
+

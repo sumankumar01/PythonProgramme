@@ -1,0 +1,4 @@
+Executed Before the all the method executed in class
+Setup the environment
+running the test case1
+cleaning the environment
