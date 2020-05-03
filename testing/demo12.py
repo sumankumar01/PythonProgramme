@@ -1,9 +1,8 @@
 import unittest
 from HtmlTestRunner import HTMLTestRunner
-import UnitTestPython
-from UnitTestPython import unitExperiment
+from unitExperiment import CodeVlidation
 
-testList = [unitExperiment.CodeVlidation]
+testList = [CodeVlidation]
 testLoad = unittest.TestLoader()
 
 TestList = []
